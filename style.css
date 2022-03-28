@@ -1,0 +1,150 @@
+
+*
+{
+  box-sizing: border-box;
+}
+body
+{
+  background-color: #353535;
+  text-decoration: none;
+  color: #d4d4d4;
+  tab-size: 2;
+}
+
+
+#resolutionSelection>form
+{
+  display: flex;
+  width: 100%;
+  justify-content: center
+}
+
+#resolutionSelection>form>div
+{
+  padding: 0 20px 0 20px;
+}
+
+#resolutionSelection>form>div>label
+{
+  display: flex;
+}
+
+#resolutionSelection>form>div>label>p
+{
+  margin: 0;
+  font-size: 1.2em;
+}
+
+#seeFlex
+{
+  margin-top: 10px;
+  padding: 0;
+  /* border: 1px solid red; */
+  margin-left: auto;
+  margin-right: auto;
+  height: 700px;
+}
+
+#bottom
+{
+  width: 100%;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+}
+
+#flexSelection
+{
+  height: available;
+  width: 50%;
+}
+
+#flexSelection>form
+{
+
+}
+
+#flexSelection>form>div>label
+{
+  display: flex;
+  flex-direction: row;
+}
+
+#flexSelection>form>div>label>p
+{
+  font-size: 1.2em;
+  margin: 1px;
+}
+
+#seeCode
+{
+  box-shadow: 3px 0 2em #464646;
+
+  width: 50%;
+  padding: 10px;
+  background: #464646;
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+
+#seeCodePre
+{
+  margin: 0;
+}
+
+
+/*Flex*/
+#flex
+{
+  border: 1px solid #87fd59;
+  height: 100%;
+  display: flex;
+  gap: 10px;
+  padding: 10px;
+}
+
+
+.flex1
+{
+  background-color: red;
+}
+
+.flex2
+{
+  background-color: green;
+}
+
+.flex3
+{
+  background-color: blue;
+}
+
+.flex4
+{
+  background-color: orange;
+}
+
+.flex5
+{
+  background-color: purple;
+}
+
+
+.flex2 span
+{
+  font-size: 3rem;
+}
+
+span
+{
+  color: white;
+  font-size: 2rem;
+}
+
+.item
+{
+  /* margin: 10px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

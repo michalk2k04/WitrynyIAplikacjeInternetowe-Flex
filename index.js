@@ -83,3 +83,9 @@ function loadFile(i)
   }
   rawFile.send(null);
 }
+
+EnlighterJS.init('pre', 'code', {
+  language : 'javascript',
+  theme: 'atomic',
+  indent : 2
+});

@@ -90,7 +90,7 @@ body
   overflow-y: hidden; */
 }
 
-#seeCodePre
+#seeBasicPre, #seeCodePre
 {
   margin: 0;
 }

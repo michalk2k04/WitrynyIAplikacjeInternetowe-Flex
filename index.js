@@ -4,11 +4,15 @@ const cssID = 'cssFlex';
 document.addEventListener('DOMContentLoaded',()=>
 {
   setResolution('resolution1');
-  setFlex('flex1')
+  setFlex('flex1');
 
   const radio = document.querySelectorAll('input[type="radio"][name="resolution"]');
 
   const flex = document.querySelectorAll('input[type="radio"][name="flex"]');
+
+  // pre-block handles
+  const seeCodePre = document.querySelector('#seeCodePre');
+  const seeBasePre = document.querySelector('#seeBasePre');
 
   radio.forEach(item=>{item.addEventListener('change',(e)=>
   {
@@ -19,6 +23,15 @@ document.addEventListener('DOMContentLoaded',()=>
   {
     setFlex(`${e.currentTarget.id}`);
   })});
+
+  // pre-block initialization
+  EnlighterJS.enlight([seeBasePre, seeCodePre], {
+    layout: 'codegroup',
+    language: 'css',
+    theme: 'atomic',
+    textOverflow: 'scroll',
+    indent : 2
+  });
 
 });
 
@@ -71,21 +84,28 @@ function loadFile(i)
 
   const rawFile = new XMLHttpRequest();
   rawFile.open("GET", `./flex/flex${i}.css`, false);
-  rawFile.onreadystatechange = function ()
+  rawFile.onreadystatechange = function()
   {
     if (rawFile.readyState === 4)
     {
       if (rawFile.status === 200 || rawFile.status === 0)
       {
-        document.querySelector("#seeCodePre").innerHTML = rawFile.responseText;
+        // disable pre-block processing
+        EnlighterJS.enlight(seeCodePre, false);
+
+        seeCodePre.innerHTML = rawFile.responseText;
+
+        // pre-block initialization
+        EnlighterJS.enlight([seeBasePre, seeCodePre], {
+          layout: 'codegroup',
+          language: 'css',
+          theme: 'atomic',
+          textOverflow: 'scroll',
+          indent : 2
+        });
+
       }
     }
   }
   rawFile.send(null);
 }
-
-EnlighterJS.init('pre', 'code', {
-  language : 'javascript',
-  theme: 'atomic',
-  indent : 2
-});

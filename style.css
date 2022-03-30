@@ -84,8 +84,10 @@ body
   width: 50%;
   padding: 10px;
   background: #464646;
-  overflow-x: scroll;
-  overflow-y: hidden;
+
+  /* set pre-blocks scrolling in .js */
+  /* overflow-x: scroll;
+  overflow-y: hidden; */
 }
 
 #seeCodePre

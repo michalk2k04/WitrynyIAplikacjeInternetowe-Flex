@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded',()=>
   })});
 
   // pre-block initialization
-  EnlighterJS.enlight([seeBasePre, seeCodePre], {
+  EnlighterJS.enlight([seeCodePre, seeBasePre], {
     layout: 'codegroup',
     language: 'css',
     theme: 'atomic',
@@ -96,7 +96,7 @@ function loadFile(i)
         seeCodePre.innerHTML = rawFile.responseText;
 
         // pre-block initialization
-        EnlighterJS.enlight([seeBasePre, seeCodePre], {
+        EnlighterJS.enlight([seeCodePre, seeBasePre], {
           layout: 'codegroup',
           language: 'css',
           theme: 'atomic',

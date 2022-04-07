@@ -1,0 +1,7 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="Run" type="JavascriptDebugType" uri="http://localhost:9001/index.html">
+    <method v="2">
+      <option name="RunConfigurationTask" enabled="true" run_configuration_name="docker-compose.yml: Compose Deployment" run_configuration_type="docker-deploy" />
+    </method>
+  </configuration>
+</component>

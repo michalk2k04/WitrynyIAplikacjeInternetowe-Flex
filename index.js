@@ -13,6 +13,7 @@ document.addEventListener('DOMContentLoaded',()=>
   // pre-block handles
   const seeCodePre = document.querySelector('#seeCodePre');
   const seeBasePre = document.querySelector('#seeBasePre');
+  const codeDescription = document.querySelector('#codeDescription');
 
   radio.forEach(item=>{item.addEventListener('change',(e)=>
   {
@@ -25,7 +26,7 @@ document.addEventListener('DOMContentLoaded',()=>
   })});
 
   // pre-block initialization
-  EnlighterJS.enlight([seeCodePre, seeBasePre], {
+  EnlighterJS.enlight([codeDescription,seeCodePre, seeBasePre], {
     layout: 'codegroup',
     language: 'css',
     theme: 'atomic',
@@ -90,20 +91,36 @@ function loadFile(i)
     {
       if (rawFile.status === 200 || rawFile.status === 0)
       {
-        // disable pre-block processing
-        EnlighterJS.enlight(seeCodePre, false);
 
-        seeCodePre.innerHTML = rawFile.responseText;
+        const rawFileDescryption = new XMLHttpRequest();
+        rawFileDescryption.open("GET", `./description/description${i}.txt`, false);
 
-        // pre-block initialization
-        EnlighterJS.enlight([seeCodePre, seeBasePre], {
-          layout: 'codegroup',
-          language: 'css',
-          theme: 'atomic',
-          textOverflow: 'scroll',
-          indent : 2
-        });
+        rawFileDescryption.onreadystatechange = function()
+        {
+          if (rawFileDescryption.readyState === 4)
+          {
+            if (rawFileDescryption.status === 200 || rawFileDescryption.status === 0)
+            {
 
+              // disable pre-block processing
+              EnlighterJS.enlight(seeCodePre, false);
+
+              seeCodePre.innerHTML = rawFile.responseText;
+              codeDescription.innerHTML = rawFileDescryption.responseText;
+
+              EnlighterJS.enlight([codeDescription,seeCodePre, seeBasePre], {
+                layout: 'codegroup',
+                language: 'css',
+                theme: 'atomic',
+                textOverflow: 'none',
+                indent: 2
+              });
+
+            }
+          }
+        }
+
+        rawFileDescryption.send(null);
       }
     }
   }

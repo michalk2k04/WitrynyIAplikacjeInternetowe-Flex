@@ -1,0 +1,9 @@
+version: '2'
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: 'wiai-flex'
+    ports:
+      - "9001:80"

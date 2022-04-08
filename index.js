@@ -1,47 +1,7 @@
 // Resolution
 const cssID = 'cssFlex';
 
-<<<<<<< HEAD
 function setResolution(i) {
-=======
-document.addEventListener('DOMContentLoaded',()=>
-{
-  setResolution('resolution1');
-  setFlex('flex1');
-
-  const radio = document.querySelectorAll('input[type="radio"][name="resolution"]');
-
-  const flex = document.querySelectorAll('input[type="radio"][name="flex"]');
-
-  // pre-block handles
-  const seeCodePre = document.querySelector('#seeCodePre');
-  const seeBasePre = document.querySelector('#seeBasePre');
-  const codeDescription = document.querySelector('#codeDescription');
-
-  radio.forEach(item=>{item.addEventListener('change',(e)=>
-  {
-    setResolution(`${e.currentTarget.id}`);
-  })});
-
-  flex.forEach(el=>{el.addEventListener('change',(e)=>
-  {
-    setFlex(`${e.currentTarget.id}`);
-  })});
-
-  // pre-block initialization
-  EnlighterJS.enlight([codeDescription,seeCodePre, seeBasePre], {
-    layout: 'codegroup',
-    language: 'css',
-    theme: 'atomic',
-    textOverflow: 'scroll',
-    indent : 2
-  });
-
-});
-
-function setResolution(i)
-{
->>>>>>> 9159b0d32937426ddeedb03ab59614dcef4e328d
   const seeFlex = document.querySelector('#seeFlex');
   switch (i) {
     case 'resolution1':
@@ -65,63 +25,34 @@ function setResolution(i)
 
 function loadFile(i) {
   const rawFile = new XMLHttpRequest();
-<<<<<<< HEAD
   rawFile.open('GET', `./flex/flex${i}.css`, false);
   rawFile.onreadystatechange = () => {
     if (rawFile.readyState === 4) {
       if (rawFile.status === 200 || rawFile.status === 0) {
-        // disable pre-block processing
-        EnlighterJS.enlight(seeCodePre, false);
-=======
-  rawFile.open("GET", `./flex/flex${i}.css`, false);
-  rawFile.onreadystatechange = function()
-  {
-    if (rawFile.readyState === 4)
-    {
-      if (rawFile.status === 200 || rawFile.status === 0)
-      {
->>>>>>> 9159b0d32937426ddeedb03ab59614dcef4e328d
-
         const rawFileDescryption = new XMLHttpRequest();
-        rawFileDescryption.open("GET", `./description/description${i}.txt`, false);
+        rawFileDescryption.open('GET', `./description/description${i}.txt`, false);
 
-<<<<<<< HEAD
-        // pre-block initialization
-        EnlighterJS.enlight([seeCodePre, seeBasePre], {
-          layout: 'codegroup',
-          language: 'css',
-          theme: 'atomic',
-          textOverflow: 'scroll',
-          indent: 2,
-        });
-=======
-        rawFileDescryption.onreadystatechange = function()
-        {
-          if (rawFileDescryption.readyState === 4)
-          {
-            if (rawFileDescryption.status === 200 || rawFileDescryption.status === 0)
-            {
-
+        rawFileDescryption.onreadystatechange = () => {
+          if (rawFileDescryption.readyState === 4) {
+            if (rawFileDescryption.status === 200 || rawFileDescryption.status === 0) {
               // disable pre-block processing
               EnlighterJS.enlight(seeCodePre, false);
 
               seeCodePre.innerHTML = rawFile.responseText;
               codeDescription.innerHTML = rawFileDescryption.responseText;
 
-              EnlighterJS.enlight([codeDescription,seeCodePre, seeBasePre], {
+              EnlighterJS.enlight([codeDescription, seeCodePre, seeBasePre], {
                 layout: 'codegroup',
                 language: 'css',
                 theme: 'atomic',
                 textOverflow: 'none',
-                indent: 2
+                indent: 2,
               });
-
             }
           }
-        }
+        };
 
         rawFileDescryption.send(null);
->>>>>>> 9159b0d32937426ddeedb03ab59614dcef4e328d
       }
     }
   };
@@ -172,7 +103,7 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   // pre-block initialization
-  EnlighterJS.enlight([seeCodePre, seeBasePre], {
+  EnlighterJS.enlight([codeDescription, seeCodePre, seeBasePre], {
     layout: 'codegroup',
     language: 'css',
     theme: 'atomic',

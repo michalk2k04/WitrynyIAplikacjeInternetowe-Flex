@@ -43,7 +43,6 @@ function loadFile(i) {
 
               EnlighterJS.enlight([codeDescription, seeCodePre, seeBasePre], {
                 layout: 'codegroup',
-                language: 'css',
                 theme: 'atomic',
                 textOverflow: 'none',
                 indent: 2,
@@ -89,6 +88,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // pre-block handles
   const seeCodePre = document.querySelector('#seeCodePre');
   const seeBasePre = document.querySelector('#seeBasePre');
+  const codeDescription = document.querySelector('#codeDescrition');
 
   radio.forEach((item) => {
     item.addEventListener('change', (e) => {
@@ -105,7 +105,6 @@ document.addEventListener('DOMContentLoaded', () => {
   // pre-block initialization
   EnlighterJS.enlight([codeDescription, seeCodePre, seeBasePre], {
     layout: 'codegroup',
-    language: 'css',
     theme: 'atomic',
     textOverflow: 'scroll',
     indent: 2,

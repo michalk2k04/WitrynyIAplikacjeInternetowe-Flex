@@ -1,0 +1,2 @@
+Dodanie flex-basis które ustawia początkową wielkość elementów
+Oraz

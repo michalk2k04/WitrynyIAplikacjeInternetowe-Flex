@@ -1,15 +1,23 @@
 {
   "name": "wiai-flex",
   "version": "1.0.0",
-  "description": "",
+  "description": "## Introduction to CSS Flex Presentation of CSS flex properties with explanation",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
+  "author": "michalk2k04",
   "license": "ISC",
   "dependencies": {
     "enlighterjs": "^3.4.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/michalk2k04/WitrynyIAplikacjeInternetowe-Flex.git"
+  },
+  "bugs": {
+    "url": "https://github.com/michalk2k04/WitrynyIAplikacjeInternetowe-Flex/issues"
+  },
+  "homepage": "https://github.com/michalk2k04/WitrynyIAplikacjeInternetowe-Flex#readme"
 }

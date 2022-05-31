@@ -1,0 +1,2 @@
+Skrócenie kodu przy użyciu flex-flow który przyjmuje jednocześnie
+parrametry flex-direction oraz flex-wrap

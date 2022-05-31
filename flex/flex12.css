@@ -1,0 +1,9 @@
+.item
+{
+  flex-basis: 100px;
+}
+
+#flex
+{
+  justify-content:  space-between;
+}

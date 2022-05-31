@@ -1,1 +1,1 @@
-test :p
+Ustawienie szerokośći dla każdego elementu o wielkości 100px

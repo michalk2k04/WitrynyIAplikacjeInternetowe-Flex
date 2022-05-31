@@ -1,1 +1,1 @@
-test 5
+Zmiana osi main i cross main ↓ cross →

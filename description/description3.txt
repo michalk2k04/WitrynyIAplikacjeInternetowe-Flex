@@ -1,1 +1,1 @@
-test 3
+Ustawienie zawijania w drugą strone (od dołu do góry)

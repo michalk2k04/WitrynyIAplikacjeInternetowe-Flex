@@ -1,1 +1,1 @@
-test 2
+Dodanie zawijania elementów jeżeli nie mieszczą się w oknie dla ustawionej wcześniej wielkośći elementów

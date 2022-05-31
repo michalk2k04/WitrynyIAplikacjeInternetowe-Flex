@@ -88,7 +88,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // pre-block handles
   const seeCodePre = document.querySelector('#seeCodePre');
   const seeBasePre = document.querySelector('#seeBasePre');
-  const codeDescription = document.querySelector('#codeDescrition');
+  const codeDescription = document.querySelector('#codeDescription');
 
   radio.forEach((item) => {
     item.addEventListener('change', (e) => {

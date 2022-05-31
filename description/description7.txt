@@ -1,0 +1,1 @@
+Ustawienie osi main ← cross ↓ oraz dodanie zawijania elementów

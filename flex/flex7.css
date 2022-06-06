@@ -1,10 +1,10 @@
 .item
 {
-    width: 100px;
+  width: 100px;
 }
 
 #flex
 {
-    flex-direction: row-reverse;
-    flex-wrap: wrap;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
 }

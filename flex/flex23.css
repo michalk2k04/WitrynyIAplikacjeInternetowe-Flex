@@ -1,0 +1,49 @@
+.item
+{
+  flex-basis: 100px;
+}
+
+flex1
+{
+  /* wartość domyślna 0, nie pozwala na rozciaganie elementów */
+  /*flex-grow: 0;*/
+  flex-grow: 1;
+}
+
+.flex2
+{
+  flex-grow: 2;
+}
+
+/* zgniateanie elementów flex-shrink */
+.flex1
+{
+  /* wartość domyslna 1 pozwala na zgniatanie elementów */
+  /*flex-shrink: 1;*/
+  flex-shrink: 0;
+}
+
+.flex4
+{
+  flex-shrink: 2;
+}
+
+/* ustalenie rozmiaru poczatkowego elementu flex-basis */
+.flex1
+{
+  flex-basis: 200px;
+}
+
+/* wlasciwość flex - suma trzech powyższych: grow shrink basis */
+.flex3
+{
+  /*flex: 0 0 150px;*/
+
+  /*flex:  0 1 auto;*/
+  /* to samo co wyżej */
+  /*flex: initial;*/
+
+  /*flex: 1 1 auto;*/
+  /* to samo co wyżej */
+  flex: auto;
+}

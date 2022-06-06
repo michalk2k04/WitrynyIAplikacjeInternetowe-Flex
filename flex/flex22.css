@@ -1,0 +1,24 @@
+.item
+{
+  flex-basis: 100px;
+}
+
+.flex3
+{
+  order: -1;
+}
+
+.flex2
+{
+  order: 1;
+}
+
+.flex1
+{
+  order: 3;
+}
+
+.flex4
+{
+  order: -2;
+}

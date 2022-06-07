@@ -1,9 +1,8 @@
-.item
-{
+.item {
   flex-basis: 100px;
 }
 
-#flex
-{
+#flex {
   align-content: space-between;
+  flex-wrap: wrap;
 }

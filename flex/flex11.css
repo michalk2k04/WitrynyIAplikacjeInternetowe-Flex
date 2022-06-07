@@ -1,9 +1,8 @@
-.item
-{
+.item {
   flex-basis: 100px;
 }
 
-#flex
-{
-  justify-content:  center;
+#flex {
+  justify-content: center;
+  flex-wrap: wrap;
 }

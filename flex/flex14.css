@@ -1,9 +1,8 @@
-.item
-{
+.item {
   flex-basis: 100px;
 }
 
-#flex
-{
-  justify-content:  space-evenly;
+#flex {
+  justify-content: space-evenly;
+  flex-wrap: wrap;
 }

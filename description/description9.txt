@@ -1,2 +1,11 @@
-Dodanie flex-basis które ustawia początkową wielkość elementów
-Oraz
+Wprowadzenie w jaki sposób na osi main mają być rozkładane
+elementy jeżeli się nie mieszczą w wyznaczonym polu
+
+Następnie włączenei zawjiania elementów
+
+
+Włączenie zawjiania zostało wykonane za pomocą
+   flex-wrap
+
+A konfiguracja rozkładu osi main poprzez
+   justify-content

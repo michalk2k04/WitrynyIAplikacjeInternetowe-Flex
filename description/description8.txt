@@ -1,2 +1,3 @@
 Skrócenie kodu przy użyciu flex-flow który przyjmuje jednocześnie
 parrametry flex-direction oraz flex-wrap
+dzięki czemu oczyszczamy kod aby się nie pogubić

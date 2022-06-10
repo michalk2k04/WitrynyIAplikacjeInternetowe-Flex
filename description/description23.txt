@@ -1,1 +1,17 @@
-a
+Usunięcie parametru order ze wszystkich elementów
+
+Dla flex4 flex1 ustawienie parametru flex-shrink
+odpowiada on za relatywną wielkość elementu
+do pozostałych elementów
+
+Dla flex1 flex2 ustawienie parametru flex-grow
+odpowiada ile ma element "urosnąć" względem
+pozostałych elementów
+
+Dla elementu flex3 ustawienie parametru flex
+na auto co odpowiada za automatyczną konfiguracje
+dla tego elementu
+
+Dla elementu flex1 ustawienie parametru flex-basis
+Dzieki czemu ustawiona podstawowa wielkość dla
+tego elementu

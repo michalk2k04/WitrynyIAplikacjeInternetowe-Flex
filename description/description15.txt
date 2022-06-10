@@ -1,1 +1,9 @@
-a
+Usunięcie elementu odpowiedzialnego za
+konfiguracje osi main (justify-content)
+a następnie dodanie elementu który pozwala
+na robienie tego samego co poprzedni tylko
+dla osi cross czyli:
+   align-content
+
+Oraz ustawienie wartośći która standardowo
+jest domyślna czyli "stretch"

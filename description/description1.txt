@@ -1,1 +1,2 @@
-Ustawienie szerokośći dla każdego elementu o wielkości 100px
+Ustawienie szerokośći dla każdego elementu
+wielkości 100px dla wszystkich elementów w oknie

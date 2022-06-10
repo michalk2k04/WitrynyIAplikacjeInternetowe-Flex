@@ -1,1 +1,12 @@
-a
+Usunięcie elementu odpowiedzialnego za
+konfiguracje osi cross (align-content)
+
+Następnie dla poszczególnych elementów
+ustawienie parametru "order" który
+pozwala na konfiguracje kolejnośći
+elementów nie zważająć na kolejność
+która występuje w kodzie HTML
+
+Parametr order przyjmuje zmienną o
+wartośćiach liczbowych dodatnich
+i ujemnych (np.: -1,10,999)
